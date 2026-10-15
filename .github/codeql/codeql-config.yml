@@ -1,0 +1,7 @@
+name: CinaVault Premium (Linux) CodeQL configuration
+
+# Vendored third-party sources are scanned upstream and generate known
+# findings that are not actionable application-code defects.
+# Keep all first-party Rust and TypeScript paths in the CodeQL analysis scope.
+paths-ignore:
+  - src-tauri/vendor/**
