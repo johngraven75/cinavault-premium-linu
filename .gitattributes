@@ -1,0 +1,4 @@
+# Check text out with LF everywhere: tests and scripts read sources and match
+# on "\n", and Debian packaging (maintainer scripts, control files) requires LF.
+* text=auto eol=lf
+*.sh text eol=lf

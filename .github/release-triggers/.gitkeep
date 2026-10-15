@@ -1,0 +1,6 @@
+# Release triggers for the Linux edition.
+#
+# To cut a release, add a file here named for the release tag, for example:
+#   .github/release-triggers/v1.0.0-linux-beta
+# Committing that file to main runs .github/workflows/linux-package.yml,
+# which builds, (optionally) signs and publishes the .deb.

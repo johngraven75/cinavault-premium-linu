@@ -1,0 +1,59 @@
+# ── Dependencies and build output ──
+node_modules/
+dist/
+.vite/
+src-tauri/target/
+build/
+
+# ── Debian packaging output ──
+*.deb
+*.ddeb
+*.buildinfo
+*.changes
+debian/.debhelper/
+debian/files
+debian/*.substvars
+debian/cinavault-premium/
+
+# ── Bundled tools and models fetched at build time ──
+public/models/
+*.onnx.part
+
+# ── Generated CI evidence and diagnostics ──
+master-evidence/
+release-diagnostics/
+validation-logs/
+test-evidence/
+package-staging/
+test-results/
+logs/
+*.log
+npm-debug.log*
+
+# ── Local secrets and environment ──
+.env
+.env.*
+!.env.store-safe
+.envrc
+
+# ── Local app data and scratch ──
+src/**/*.cinavault.json
+src/*.cinavault.json
+.snapshots/
+*.rej
+*.spk
+
+# ── Editors, OS and agent tooling ──
+.DS_Store
+.vscode/
+.idea/
+.cursorignore
+.cursorindexingignore
+.claude/
+.clawness/
+
+# ── Python helpers ──
+__pycache__/
+*.py[cod]
+.venv/
+venv/
